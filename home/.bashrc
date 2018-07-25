@@ -14,9 +14,5 @@ export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 gpg-connect-agent updatestartuptty /bye
 
-xmodmap ~/.Xmodmap
-xrandr --output eDP1 --primary
-xrandr --output DP1 --auto --above eDP1
-
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 #homeshick --quiet refresh
