@@ -16,3 +16,5 @@ gpg-connect-agent updatestartuptty /bye
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 #homeshick --quiet refresh
+
+export QSYS_ROOTDIR="/home/patrick/.cache/yay/quartus-free/pkg/quartus-free/opt/altera/18.1/quartus/sopc_builder/bin"
