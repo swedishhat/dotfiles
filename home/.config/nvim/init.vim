@@ -1,5 +1,5 @@
 " Plugin fun
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -17,12 +17,23 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
 Plug 'supercollider/scvim'
 Plug 'tpope/vim-sensible'
+Plug 'rust-lang/rust.vim'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
 filetype on
 filetype plugin on
 filetype indent on
+
+colorscheme elflord
+
+" 'relativenumber' is not a complete replacement for 'number'; rather, these two options interact so that you can show only relative numbers (number off and relativenumber on), only absolute line numbers (relativenumber off and number on), or show the absolute number on the cursor line and relative numbers everywhere else (both relativenumber and number on). 
+set number
+" set relativenumber
+
+" Run the current file by pressing F9
+nnoremap <F9> :!%:p<Enter><Enter>
 
 " recognize anything in my .Postponed directory as a news article, and anything
 " at all with a .txt extension as being human-language text [this clobbers the
@@ -69,7 +80,7 @@ nmap \p :ProseMode<CR>
 
 
 " Allows for file to be created along with parent directories
-function s:MkNonExDir(file, buf)
+function! s:MkNonExDir(file, buf)
 	if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
 		let dir=fnamemodify(a:file, ':h')
 		if !isdirectory(dir)
