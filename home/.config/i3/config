@@ -11,13 +11,18 @@
 # Mod1 is Alt key and Mod4 is Super/Windows key
 set $mod Mod4
 
+hide_edge_borders both
+for_window [class="^.*"] border pixel 2
+gaps inner 20
+gaps outer 0
+
 # Font for window titles. Will also be used by the bar unless a different font
 
-#font pango:monospace 8
+font pango:monospace 16
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 16
+#font pango:DejaVu Sans Mono 16
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
