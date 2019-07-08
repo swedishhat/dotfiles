@@ -16,6 +16,9 @@ Plug 'tpope/vim-repeat'
 Plug 'supercollider/scvim'
 Plug 'tpope/vim-sensible'
 Plug 'vim-syntastic/syntastic'
+Plug 'wannesm/wmgraphviz.vim'
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'} " stable
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " nightly
 
 " Themes and styles
 Plug 'patstockwell/vim-monokai-tasty'
