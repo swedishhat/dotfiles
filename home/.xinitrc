@@ -5,5 +5,7 @@
 #~/.fehbg &
 #eval 'cat ~/.fehbg'
 #exec i3
-#exec startxfce4
-exec startkde
+#exec startxfce4        # doesn't exist?
+#exec startkde          # doesn't exist?
+#exec sway
+exec startplasma-x11

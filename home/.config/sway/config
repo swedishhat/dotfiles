@@ -6,16 +6,24 @@
 
 ### Variables
 #
-# Logo key. Use Mod1 for Alt.
+# Modifier Key
+# Mod1 = Alt (default)
+# Mod4 = Super/Win
+# Note: In .zlogin or .zprofile, caps lock is remapped
+# to the Super/Win/Mod4 key to be easier on the pinky
 set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-# Your preferred terminal emulator
-set $term termite
-# Your preferred application launcher
+
+# Direction Keys
+# Adjusted from defaults to be more like vim
+set $left  h # j
+set $down  j # k
+set $up    k # l
+set $right l # ;
+
+# Terminal Emulator
+set $term konsole # urxvt
+
+# Application Launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu dmenu_path | dmenu | xargs swaymsg exec
 

@@ -1,24 +1,24 @@
 " Plugin fun
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'mileszs/ack.vim'
-Plug 'w0rp/ale'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-unimpaired'
-Plug 'qpkorr/vim-bufkill'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-repeat'
-Plug 'supercollider/scvim'
-Plug 'tpope/vim-sensible'
-Plug 'vim-syntastic/syntastic'
-Plug 'wannesm/wmgraphviz.vim'
-" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'} " stable
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " nightly
+Plug 'junegunn/goyo.vim' "Distraction-free writing in Vim
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " a command line fuzzy finder
+Plug 'mileszs/ack.vim' " Vim plugin for the Perl module / CLI script 'ack'
+Plug 'w0rp/ale' " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+Plug 'airblade/vim-gitgutter' " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
+Plug 'tpope/vim-fugitive' " A Git wrapper so awesome, it should be illegal
+Plug 'tpope/vim-unimpaired' " Pairs of handy bracket mappings
+Plug 'qpkorr/vim-bufkill' " Unload, delete or wipe a buffer without closing the window or split
+Plug 'scrooloose/nerdtree' " A tree explorer plugin for vim.
+Plug 'tpope/vim-surround' " quoting/parenthesizing made simple
+Plug 'sheerun/vim-polyglot' " A solid language pack for Vim.
+Plug 'tpope/vim-repeat' " enable repeating supported plugin maps with '.'
+" Plug 'supercollider/scvim' " A vim plugin for supercollider
+Plug 'tpope/vim-sensible' " a universal set of defaults that (hopefully) everyone can agree on
+Plug 'vim-syntastic/syntastic' " Syntastic is a syntax checking plugin
+Plug 'wannesm/wmgraphviz.vim' " Vim plugin for Graphviz
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "stable - a completion framework and language server client which supports extension features of VSCode
+" Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'} " nightly
 
 " Themes and styles
 Plug 'patstockwell/vim-monokai-tasty'
